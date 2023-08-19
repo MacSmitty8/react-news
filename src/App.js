@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import NewsDisplay from './components/NewsDisplay';
 function App() {
 
   const APIKEY = "7c04e93a14234338b38e2f15cbaa5839";
@@ -29,7 +30,20 @@ function App() {
   return (
     <div className="App">
       <h1>News App!</h1>
+      <div className="articles">
+        {articles.map(article => (
+          <NewsDisplay
+            key={article.key}
+            title={article.title}
+            description={article.description}
+            author={article.author}
+            source={article.source}
+            url={article.url}
+            urlToImage={article.urlToImage}
+          />
 
+        ))}
+      </div>
     </div>
   );
 }
