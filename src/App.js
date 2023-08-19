@@ -23,13 +23,13 @@ function App() {
     }
     catch (error) {
       console.error('Error fetching articles:', error);
-      // You can set some state here to handle the error in your UI
+      // Checks to see if there's any errors when fetching the articles.
   }
 };
   return (
     <div className="App">
       <h1>News App!</h1>
-      
+
     </div>
   );
 }
