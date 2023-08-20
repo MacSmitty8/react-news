@@ -13,4 +13,19 @@
    
 }
 
+ .navbar {
+  width: min(90%, 75rem);
+  margin: 0 auto;
+  min-height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  
 

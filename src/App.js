@@ -20,6 +20,7 @@ function App() {
         throw new Error('Network response error.')
       }
       const data = await response.json();
+      console.log(data);
       setArticles(data.articles);
     }
     catch (error) {
@@ -29,6 +30,43 @@ function App() {
 };
   return (
     <div className="App">
+    <nav className="navbar">
+        <ul>
+            <li>
+                <a href="#US">US</a>
+            </li>
+            <li>
+                <a href="#World">World</a>
+            </li>
+            <li>
+                <a href="#Politics">Politics</a>
+            </li>
+            <li>
+                <a href="#Business">Business</a>
+            </li>
+            <li>
+                <a href="#Opinion">Opinion</a>
+            </li>
+            <li>
+                <a href="#Health">Health</a>
+            </li>
+            <li>
+                <a href="#Entertainment">Entertainment</a>
+            </li>
+            <li>
+                <a href="#Style">Style</a>
+            </li>
+            <li>
+                <a href="#Travel">Travel</a>
+            </li>
+            <li>
+                <a href="#Sports">Sports</a>
+            </li>
+            <li>
+                <a href="#Video">Video</a>
+            </li>
+        </ul>
+    </nav>
       <h1>News App!</h1>
       <div className="articles">
         {articles.map(article => (
