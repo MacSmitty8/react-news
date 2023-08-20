@@ -1,3 +1,7 @@
+body {
+    background-color:  #F5F2E8;
+}
+
 .news-app {
     display: flex;
     justify-content: center;
@@ -8,6 +12,7 @@
     padding: 20px;
     border: 1px solid;
     margin-bottom: 20px;
+    
 }
 
 .article-image {
@@ -40,3 +45,16 @@
     background-color: #ddd;
     color: black;
 }
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+ .footer a{
+    text-decoration: none;
+ }

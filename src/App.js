@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import NewsDisplay from './components/NewsDisplay';
+import Footer from './components/Footer';
 function App() {
 
   const APIKEY = "7c04e93a14234338b38e2f15cbaa5839";
@@ -57,8 +58,9 @@ function App() {
             url={article.url}
             urlToImage={article.urlToImage}
           />
-
+        
         ))}
+        <Footer />
       </div>
     </div>
   );
