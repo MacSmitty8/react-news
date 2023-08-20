@@ -5,9 +5,9 @@ import './articleDisplay.css'
 const NewsDisplay = ({ author, description, title, url, urlToImage, source }) => {
     return (
         <div className="news-app">
-            <div className="article-image">
-            <h2><a href={url}>{title}</a></h2>
-                <img src={urlToImage} alt="Article Thumbnail" />
+            <div className="news-item">
+            <h3><a href={url}>{title}</a></h3>
+                <img className="article-image" src={urlToImage} alt="Article Thumbnail" />
                 <h4>{author}</h4>
                 <h4>{source.name}</h4> 
                 <p>{description}</p>
