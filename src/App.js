@@ -45,6 +45,7 @@ function App() {
                 <a href="#Sports">Sports</a>
                 <a href="#Video">Video</a>
         </ul>
+        {/* Displays the Navbar above everything. The links don't lead to anything though. */}
     </nav>
       <h1>News App!</h1>
       <div className="articles">
@@ -58,11 +59,12 @@ function App() {
             url={article.url}
             urlToImage={article.urlToImage}
           />
-        
         ))}
+        {/* Brings in the parameters and properties from NewsDisplay, and renders them on the screen. */}
         <Footer />
       </div>
     </div>
+
   );
 }
 
